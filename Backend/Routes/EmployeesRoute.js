@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const mongoose = require("mongoose");
-const Employee = require("../Models/EmployeeDB");
+import mongoose from "mongoose";
+import Employee from "../Models/EmployeeDB.js";
 
 // GET /employees - It will Fetch all employees
 router.get("/", async (req, res) => {
@@ -108,4 +108,4 @@ router.delete("/:id", async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;

@@ -1,10 +1,13 @@
-require("dotenv").config();
-const express = require("express");
-const connectDB = require("./config/db");
-const cors = require("cors");
-const employeeRoutes = require("./Routes/EmployeesRoute");
-const PORT = 3000;
+import express from "express";
+import connectDB from './config/db.js';
+import cors from "cors";
+import employeeRoutes from "./Routes/EmployeesRoute.js";
+import dotenv from "dotenv";
+
+
 const app = express();
+const PORT = 3000;
+dotenv.config();
 
 app.use(express.json());
 app.use(cors());
