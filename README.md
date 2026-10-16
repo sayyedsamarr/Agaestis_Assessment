@@ -2,6 +2,7 @@
 
 A full-stack CRUD web application for managing employee records, built with **React + TypeScript** on the frontend and **Node.js + Express + MongoDB** on the backend.
 
+Github Repo - https://github.com/sayyedsamarr/Agaestis_Assessment.git
 ---
 
 ## Tech Stack
